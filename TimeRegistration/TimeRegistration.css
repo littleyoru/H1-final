@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper {
+    margin: 0 auto;
+    background-color: #CEE6EB;
+}
+h1 {
+    font: Arial bolder 26px;
+    color: #EB771C;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px #FF8F38;
+}
+.content {
+    padding: 10px;
+    width: 60%;
+}
+.contain {
+    display: inline-block;
+}
+select {
+    line-height: 26px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px;
+    display: block;
+}
+select:hover {
+    cursor: pointer;
+}
+option {
+    color: #008A9E;
+}
+input, label {
+    margin: 10px;
+    line-height: 26px;
+    font-size: 16px;
+}
+input:focus, select:focus {
+    outline-color: #008A9E;
+}
+label {
+    color: #008A9E;
+}
+input#hours {
+    max-width: 50px;
+}
+input#message {
+    width: 90%;
+}
+
+/* @media(max-width: 600px) {
+    input#message {
+        width: 200px;
+    }
+} */

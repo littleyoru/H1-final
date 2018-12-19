@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="TimeRegistration.css">
+        <script src='TimeRegistration.js'></script>
+    </head>
+    <body>
+        <div id='wrapper'>
+            <h1>Tidsregistrering</h1>
+            <div class='content'>
+                <select id='tasks'>
+                    <option value='Chose a task..'>Vælg en opgave</option>
+                </select>
+                <label for='date'>Dato:</label>
+                <input type='date' id='date' name='date' value='2018-12-19' min='2018-01-01' max='2018-12-12'>
+                <div class='contain'>
+                    <label for='hours'>Timer:</label>
+                    <input type='text' id='hours' name='hours' value=''>
+                </div>
+            </div>
+            <div class='content'>
+                <label for='message'>Besked:</label>
+                <input type='text' id='message' name='message' value=''>
+                <select id='absence'>
+                    <option value='Chose an absence reason..'>Vælg fravær årsag</option>
+                </select>
+            </div>
+        </div>
+    </body>
+</html>
