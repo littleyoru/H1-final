@@ -2,3 +2,15 @@
     margin: 0 auto;
     background-color: antiquewhite;
 }
+h1 {
+    font: Arial bolder 26px #EB771C;
+}
+a {
+    text-decoration: none;
+    height: 20px;
+    color: #008A9E;
+    /*box-shadow: 0 2px rgb(175, 108, 7);*/
+}
+a:hover {
+    color: #1CD1EB;
+}
