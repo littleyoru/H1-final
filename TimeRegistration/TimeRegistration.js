@@ -10,5 +10,10 @@ $(document).ready(function() {
         $(data).each(function(){
             select.append($('<option>').attr('value', this.TaskName).text(this.TaskName))
         })
+
     }, 'JSON')
+
+    $('#submit').click(function(){
+        $.post('http://localhost:54003/api/Entries/post')
+    })
 })
