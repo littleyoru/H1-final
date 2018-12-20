@@ -10,21 +10,28 @@
             <h1>Tidsregistrering</h1>
             <div class='content'>
                 <select id='tasks'>
-                    <option value='Chose a task..'>Vælg en opgave</option>
+                    <option value='Chose a task..'>Chose a task</option>
                 </select>
-                <label for='date'>Dato:</label>
+                <label for='date'>Date:</label>
                 <input type='date' id='date' name='date' value='2018-12-19' min='2018-01-01' max='2018-12-12'>
                 <div class='contain'>
-                    <label for='hours'>Timer:</label>
+                    <label for='hours'>Hours:</label>
                     <input type='text' id='hours' name='hours' value=''>
                 </div>
             </div>
             <div class='content'>
-                <label for='message'>Besked:</label>
+                <label for='message'>Message:</label>
                 <input type='text' id='message' name='message' value=''>
-                <select id='absence'>
-                    <option value='Chose an absence reason..'>Vælg fravær årsag</option>
-                </select>
+
+                <div id='absence'>
+                    <p>Chose a reason for absence: </p>
+                    <input type='radio' name='absence' value='None' checked="checked" />None
+                    <input type='radio' name='absence' value='Sickness' />Sickness
+                    <input type='radio' name='absence' value='Doctor' />Doctor
+                    <input type='radio' name='absence' value='VacationPayed' />VacationPayed
+                    <input type='radio' name='absence' value='VacationNotPayed' />VacationNotPayed
+                    <input type='radio' name='absence' value='Other' />Other
+                </div>
             </div>
         </div>
     </body>

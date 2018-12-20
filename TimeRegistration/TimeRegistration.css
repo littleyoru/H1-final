@@ -34,16 +34,24 @@ select:hover {
 option {
     color: #008A9E;
 }
-input, label {
+input, label, p {
     margin: 10px;
     line-height: 26px;
     font-size: 16px;
 }
-input:focus, select:focus {
+input:focus, select:focus,
+input:hover, select:hover {
     outline-color: #008A9E;
 }
-label {
+#absence {
+    color: #EB771C;
+}
+#absence p, label {
     color: #008A9E;
+}
+
+#absence input[type=radio] {
+    margin-left: 20px;
 }
 input#hours {
     max-width: 50px;
