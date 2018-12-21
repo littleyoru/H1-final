@@ -43,6 +43,12 @@ input:focus, select:focus,
 input:hover, select:hover {
     outline-color: #008A9E;
 }
+select, input:not([type=radio]) {
+    border: none;
+    box-shadow: 0 0 2px 1px #008A9E;
+    background-color: #fff;
+    color: #008A9E;
+}
 #absence {
     color: #EB771C;
 }
@@ -52,6 +58,7 @@ input:hover, select:hover {
 
 #absence input[type=radio] {
     margin-left: 20px;
+    cursor: pointer;
 }
 input#hours {
     max-width: 50px;
@@ -61,13 +68,10 @@ input#message {
 }
 input#submit {
     padding: 5px;
-    background-color: #fff;
-    color: #008A9E;
     border: none;
     cursor: pointer;
     width: 100px;
     text-align: center;
-    box-shadow: 0 0 2px 2px #008A9E;
 }
 
 /* @media(max-width: 600px) {
